@@ -1,0 +1,1 @@
+alert('Teste com arquivo javaScript');

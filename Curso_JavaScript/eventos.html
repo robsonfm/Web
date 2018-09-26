@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Eventos</title>
+		<meta charset="utf-8">
+
+		<script type="text/javascript">
+			function msgBoasVindas(){
+				alert('Seja bem vindo, você precionou o botao esquerdo do mouse sobre este elemento');
+			}
+
+			function msgTeclado(){
+				alert('Evento do teclado');
+			}
+	
+		</script>
+
+		<style type="text/css">
+			div{
+				float: left;
+			}
+
+		</style>
+	</head>
+	<body onload="console.log('A página foi totalmente carregada')" onresize="console.log('A página foi redimensionada')">
+		<div onclick="msgBoasVindas()" style="background: #CCC; height: 100px; width: 150px; margin: 5px;">
+			onClick
+		</div>
+
+		<div ondblclick="msgBoasVindas()" style="background: #CCC; height: 100px; width: 150px; margin: 5px;">
+			ondblclick
+		</div>
+
+		<div onmousedown="msgBoasVindas()" style="background: #CCC; height: 100px; width: 150px; margin: 5px;">
+			onmousedown
+		</div>
+
+		<div onmouseover="msgBoasVindas()" style="background: #CCC; height: 100px; width: 150px; margin: 5px;">
+			onmouseover
+		</div>
+
+		<div onmouseout="msgBoasVindas()" style="background: #CCC; height: 100px; width: 150px; margin: 5px;">
+			onmouseout
+		</div>
+
+		<input onkeydown="msgTeclado()" type="text" name="" placeholder="onkeydown">
+		<input onkeypress="msgTeclado()" type="text" name="" placeholder="onkeypress" >
+		<input onkeyup="msgTeclado()" type="text" name="" placeholder="onkeyup" >
+	</body>
+</html>

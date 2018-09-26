@@ -1,0 +1,108 @@
+/*Border box*/
+/*#box{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	margin: 10px;
+	/*border-radius: 20px 80px; 
+	-webkit-border-radius: 20px 80px;
+	-moz-border-radius: 20px 80px
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+	background: url("../img/camera.png");
+}
+
+#box h1{
+	background: rgba(255,255,255,0.5);
+}
+
+#box p{
+	background: rgba(255,255,255,0.5);
+}*/
+
+
+/*degrade e transparencia*/
+/*
+#box{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	margin: 10px;
+	/*background: linear-gradient(45deg,red,yellow);
+	background: -webkit-linear-gradient(45deg,red,yellow);
+	background: -moz-linear-gradient(45deg,red,yellow);
+	background: radial-gradient(red,yellow,purple,green,blue);
+	background: -webkit-radial-gradient(red,yellow,purple,green,blue);
+	background: -moz-radial-gradient(red,yellow,purple,green,blue);
+}*/
+
+/*Sombras*/
+
+#box{
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	padding: 8px;
+	background: #009670;
+	/*box-shadow: 4px 4px 0px 0px black;*/
+	box-shadow: 4px 4px 0px 0px black, -4px -4px 0px 0px gray ;
+}
+
+#box h1{
+	color: white;
+	font-size: 60px;
+	/*text-shadow: 3px 3px 20px purple;*/
+	/*text-shadow: 10px 10px rgba(0,0,0,0.5);*/
+	text-shadow: 10px 10px black;
+}
+
+/*Animação*/
+
+/*Criar a animacao*/
+@keyframes animacao-box{
+	from{
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+	}
+	to{
+		background: yellow;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+	}
+}
+
+#box-animacao{
+	width: 300px;
+	height: 300px;
+	background: red;
+	margin: 5px;
+	position: relative;
+	animation-name: animacao-box;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+
+}
+
+/*Transições*/
+#box-transicao{
+	width: 300px;
+	height: 300px;
+	background: orange;
+	transition: all 2s;
+}
+
+#box-transicao:hover{
+	background: green;
+	width: 400px;
+	height: 400px;
+	/*transition: background 3s, width 6s, height 6s;*/
+	transition: all 2s;
+}

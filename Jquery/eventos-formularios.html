@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Jquery Eventos - formularios</title>
+
+		<!-- jquery -->
+		<script src="jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//focus
+				$('#input1').focus(function(){
+					alert('Elemento foi focado');
+				});
+				//blur
+				$('#input2').blur(function(){
+					alert('Perdeu o foco');
+				});
+				//change
+				$('#input3').change(function(){
+					alert('Elemento foi modificado');
+				});
+			});
+		</script>
+
+
+	</head>
+	<body>
+		<input id="input1" type="text" name="">
+		<input id="input2" type="text" name="">
+		<select id="input3">
+			<option value="1">Primeira opção</option>
+			<option value="2">Segunda opção</option>
+		</select>
+
+	</body>
+</html>

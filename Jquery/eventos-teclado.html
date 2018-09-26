@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Jquery Eventos - teclado</title>
+
+		<!-- jquery -->
+		<script src="jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//keydown
+				$('#input1').keydown(function(){
+					alert('Teclado pressionado');
+				});
+				//keypress
+				$('#input2').keypress(function(){
+					alert('Teclado pressionado');
+				});
+				//keyup
+				$('#input3').keyup(function(){
+					alert('Tecla liberada');
+				});
+
+
+			});
+		</script>
+
+
+	</head>
+	<body>
+		<input id="input1" type="text" name="">
+		<input id="input2" type="text" name="">
+		<input id="input3" type="text" name="">
+
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Jquery Eventos - Mouse</title>
+
+		<!-- jquery -->
+		<script src="jquery-3.3.1.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				//click
+				$('#div1').click(function(){
+					alert('Elemento foi clicado');
+				});
+				//dblclick
+				$('#div2').dblclick(function(){
+					alert('Elemento foi clicado 2x');
+				});
+				//mousedown
+				$('#div3').mousedown(function(){
+					alert('Elemento foi clicado independente de ser solto');
+				});
+				//mouseover
+				$('#div4').mouseover(function(){
+					alert('Mouse passou por cima do Elemento');
+				});
+				//mouseout
+				$('#div5').mouseout(function(){
+					alert('Mouse saiu do Elemento');
+				});	
+
+
+			});
+		</script>
+
+
+	</head>
+	<body>
+		<div id="div1" style="height: 150px; width: 150px; background: #CCC; margin: 2px; float: left;" >
+			
+		</div>
+
+		<div id="div2" style="height: 150px; width: 150px; background: #CCC; margin: 2px; float: left;">
+			
+		</div>
+
+		<div id="div3" style="height: 150px; width: 150px; background: #CCC; margin: 2px; float: left;">
+			
+		</div>
+
+		<div id="div4" style="height: 150px; width: 150px; background: #CCC; margin: 2px; float: left;">
+			
+		</div>
+
+		<div id="div5" style="height: 150px; width: 150px; background: #CCC; margin: 2px; float: left;">
+			
+		</div>
+
+	</body>
+</html>
